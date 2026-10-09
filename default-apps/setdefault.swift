@@ -19,7 +19,7 @@
 import AppKit
 import UniformTypeIdentifiers
 
-let defaultExts = ["json", "md", "php", "js", "ts", "xml", "yaml", "sql"]
+let defaultExts = ["json", "md", "php", "js", "ts", "xml", "yaml", "sql", "zsh"]
 
 let args = Array(CommandLine.arguments.dropFirst())
 let usage = """

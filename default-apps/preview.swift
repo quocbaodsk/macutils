@@ -13,7 +13,7 @@
 import AppKit
 import UniformTypeIdentifiers
 
-let defaultExts = ["json", "md", "php", "js", "ts", "xml", "yaml", "sql"]
+let defaultExts = ["json", "md", "php", "js", "ts", "xml", "yaml", "sql", "zsh"]
 
 let args = Array(CommandLine.arguments.dropFirst())
 if args.contains(where: { $0 == "-h" || $0 == "--help" }) {
