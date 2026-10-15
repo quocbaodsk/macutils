@@ -14,12 +14,13 @@
 // - Mã thoát: 0 nếu không có lỗi, 1 nếu sai tham số / không tìm thấy app / có đuôi đổi thất bại.
 
 // Usage: swift setdefault.swift <app> [extension1 extension2 ...]
-// Example: swift setdefault.swift com.apple.dt.Xcode json md
+// Example Sublime Text 4: swift setdefault.swift com.sublimetext.4 json md toml
+// Example Xcode: swift setdefault.swift com.apple.dt.Xcode json md toml
 
 import AppKit
 import UniformTypeIdentifiers
 
-let defaultExts = ["json", "md", "php", "js", "ts", "xml", "yaml", "sql", "zsh"]
+let defaultExts = ["json", "md", "php", "js", "ts", "xml", "toml", "yaml", "sql", "zsh"]
 
 let args = Array(CommandLine.arguments.dropFirst())
 let usage = """
